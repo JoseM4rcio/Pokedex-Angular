@@ -1,0 +1,14 @@
+<div class="card position-absolute top-50 start-50 translate-middle" style="width: 20rem;">
+    <div class="text-bg-light"><img [src]="pokemon.img" width="220rem"></div>
+    <div class="text-bg-dark p-3" style="border-radius: 5px;">
+      <ul style="list-style-type: none; margin-right: 14px;">
+        <li>ID: {{pokemon.id}}</li>
+        <li class="name">NOME: {{pokemon.name | titlecase}}</li>
+        <li>ALTURA: {{pokemon.height}}</li>
+        <li>PESO: {{pokemon.weight}}</li>
+        <li>EXPERIÊNCIA BASE: {{pokemon.base_experience}}</li>
+      </ul>
+      <div (click)="previousPokemon()" class="btn btn-outline-danger" style="margin: 0 15px;">VOLTAR</div>
+      <div (click)="nextPokemon()" class="btn btn-outline-success">PRÓXIMO</div>
+    </div>
+</div>
